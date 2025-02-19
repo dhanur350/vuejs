@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent/HeaderComponent.vue';
+import List from './views/List.vue';
 
 const handleclick = (event:any) => {
   console.log(event);
@@ -15,6 +16,7 @@ const handleclick = (event:any) => {
     <div class="wrapper">
       <HeaderComponent message="Hi there"  />
       <HelloWorld msg="You did it!" />
+      <List />
       <button @click="handleclick">Click me</button>
 
       <nav>
