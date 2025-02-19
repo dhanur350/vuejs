@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import Header from './components/Header/Header.vue';
+import HeaderComponent from './components/HeaderComponent/HeaderComponent.vue';
 
-const handleclick = (event) => {
+const handleclick = (event:any) => {
   console.log(event);
-
 }
 </script>
 
@@ -14,7 +13,7 @@ const handleclick = (event) => {
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <Header message="Hi there"  />
+      <HeaderComponent message="Hi there"  />
       <HelloWorld msg="You did it!" />
       <button @click="handleclick">Click me</button>
 
